@@ -34,7 +34,7 @@ function DateElement(props) {
     <SelectWidget
       schema={{ type: "integer" }}
       id={id}
-      className="form-control"
+      className="pt-input"
       options={{ enumOptions: rangeOptions(range[0], range[1]) }}
       placeholder={type}
       value={value}
@@ -143,15 +143,15 @@ class AltDateWidget extends Component {
           </li>
         ))}
         <li>
-          <a href="#" className="btn btn-info btn-now" onClick={this.setNow}>
+          <a
+            href="#"
+            className="pt-button pt-icon-calendar"
+            onClick={this.setNow}>
             Now
           </a>
         </li>
         <li>
-          <a
-            href="#"
-            className="btn btn-warning btn-clear"
-            onClick={this.clear}>
+          <a href="#" className="pt-button pt-icon-delete" onClick={this.clear}>
             Clear
           </a>
         </li>

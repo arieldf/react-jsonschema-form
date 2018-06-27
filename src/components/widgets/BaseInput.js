@@ -31,7 +31,7 @@ function BaseInput(props) {
 
   return (
     <input
-      className="form-control"
+      className="pt-input"
       readOnly={readonly}
       disabled={disabled}
       autoFocus={autofocus}

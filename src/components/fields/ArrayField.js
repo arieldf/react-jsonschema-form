@@ -39,7 +39,7 @@ function IconBtn(props) {
   return (
     <button
       type="button"
-      className={`btn btn-${type} ${className}`}
+      className={`pt-button pt-${type} ${className}`}
       {...otherProps}>
       <i className={`glyphicon glyphicon-${icon}`} />
     </button>
@@ -63,7 +63,7 @@ function DefaultArrayItem(props) {
       {props.hasToolbar && (
         <div className="col-xs-3 array-item-toolbox">
           <div
-            className="btn-group"
+            className="pt-button-group"
             style={{
               display: "flex",
               justifyContent: "space-around",
@@ -674,7 +674,7 @@ function AddButton({ onClick, disabled }) {
         <IconBtn
           type="info"
           icon="plus"
-          className="btn-add col-xs-12"
+          className="pt-button pt-icon-add col-xs-12"
           tabIndex="0"
           onClick={onClick}
           disabled={disabled}
