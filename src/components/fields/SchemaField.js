@@ -81,13 +81,9 @@ function ErrorList(props) {
   return (
     <div>
       <p />
-      <ul className="error-detail bs-callout bs-callout-info">
+      <ul className="pt-callout pt-intent-danger pt-icon-info-sign">
         {errors.map((error, index) => {
-          return (
-            <li className="text-danger" key={index}>
-              {error}
-            </li>
-          );
+          return <li key={index}>{error}</li>;
         })}
       </ul>
     </div>
